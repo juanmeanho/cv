@@ -15,7 +15,7 @@
                 <span >Curriculum Vitae</span><br>
                 <span class="headline">Juan Arístides Meaño</span>
                 <br>
-                <span >Desarrollador Web</span>
+                <span >< Desarrollador Web /></span>
                 
               </v-flex>
             </v-layout>
@@ -131,9 +131,9 @@
               <v-container>
                 <v-layout row wrap>
                   <v-flex xs12>
-                    <span class="headline">Acerca de mi</span><br>
+                    <span class="headline"><v-icon medium>person</v-icon>&nbsp;Acerca de mi</span><br>
                     <v-divider></v-divider><br>
-                    <span>Soy Ingeniero de Sistemas con 10 años de experiencia en desarrollo de aplicaciones web para la industria petrolera manejando herramientas como PHP, CSS, Javascript y MySQL, actualmente orientando mi perfil profesional hacía el desarrollo especializado de Front-end mediante el uso de tecnologías y frameworks como VueJS, Vuetify, Angular, NodeJS y Webpack entre otras.</span>
+                    <span>Soy Ingeniero de Sistemas con 10 años de experiencia en desarrollo de aplicaciones web para la industria petrolera manejando herramientas como PHP, CSS, JavaScript y MySQL, actualmente orientando mi perfil profesional hacía el desarrollo especializado de Front-end mediante el uso de tecnologías y frameworks como Vue.js, Vuetify, ES6, Angular y Webpack entre otras.</span>
                   </v-flex>
                   <v-flex >
                       <div class="text-xs-center">
@@ -141,46 +141,256 @@
                           rotate="360"
                           size="100"
                           width="15"
-                          value="50"
+                          value="80"
                           color="teal"
                           class="mx-3 my-3"
                         >
-                          asfsdaf
+                          <v-avatar
+                            size="70"
+                          >
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSidHh0iF4e8n9YoYiUBpQKZKRHjiEpToP-kYDNhRKKHk2VnpE2" alt="alt">
+                          </v-avatar>
                         </v-progress-circular>
 
                         <v-progress-circular
-                          rotate="-90"
+                          rotate="360"
                           size="100"
                           width="15"
-                          value="value"
+                          value="85"
+                          color="amber darken-2"
+                          class="mx-3 my-3"
+                        >
+                           <v-avatar
+                            size="74"
+                            color="primary"
+                          >
+                            <img src="https://rapidpurple.com/v2/wp-content/uploads/2014/01/PHP.jpg"
+                             alt="alt">
+                          </v-avatar>
+                        </v-progress-circular>
+
+                        <v-progress-circular
+                          rotate="360"
+                          size="100"
+                          width="15"
+                          value="75"
                           color="primary"
                           class="mx-3 my-3"
                         >
-                          fsadf
+                        <v-avatar
+                            size="70"
+                            color="primary"
+                          >
+                            <img src="https://pbs.twimg.com/profile_images/875996174305472512/upM71pVR_400x400.jpg"
+                             alt="alt">
+                          </v-avatar>
+                          
                         </v-progress-circular>
 
                         <v-progress-circular
-                          rotate="90"
+                          rotate="360"
                           size="100"
                           width="15"
-                          value="value"
-                          color="red"
+                          value="60"
+                          color="indigo"
                           class="mx-3 my-3"
                         >
-                          afasf
-                        </v-progress-circular>
-
-                        <v-progress-circular
-                          rotate="180"
-                          size="100"
-                          width="15"
-                          value="value"
-                          color="pink"
-                          class="mx-3 my-3"
-                        >
-                          edhsdgh
+                          <v-avatar
+                            size="74"
+                          >
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png"
+                             alt="alt">
+                          </v-avatar>
                         </v-progress-circular>
                       </div>
+                  </v-flex>
+                  <v-flex xs12>
+                    <span class="headline"><v-icon medium>business</v-icon>&nbsp;Experiencia Laboral </span><br>
+                    <v-divider></v-divider><br>
+                    <v-layout>
+                      <v-flex xs12>
+                        <v-card elevation-10>
+                          <v-toolbar height="50%" color="primary" dark>
+                             <v-icon >play_arrow</v-icon>
+                            <v-toolbar-title >Petroleos de Venezuela S.A</v-toolbar-title>
+                            <v-spacer></v-spacer>
+                            <v-toolbar-items>
+                              <v-btn flat><v-icon left>date_range</v-icon>Desde 2008</v-btn>
+                            </v-toolbar-items>
+                          </v-toolbar>
+
+                          <v-card-title primary-title>
+                            <div>
+                              <h2>
+                                  <v-icon>settings</v-icon>
+                                Desarrollador de Software</h2>
+                                <v-list>
+                                  
+                                    <v-list-tile>
+                                      <v-list-tile-avatar>
+                                        <v-icon>assignment</v-icon>
+                                      </v-list-tile-avatar>
+
+                                    Desarrollo de aplicaciones web para la empresa y el mantenimiento de las mismas.
+                                    </v-list-tile>
+                                    <v-list-tile>
+                                      <v-list-tile-avatar>
+                                        <v-icon>build</v-icon>
+                                      </v-list-tile-avatar>
+                                        <div class="text-xs-center">
+                                          <v-chip color="primary" label text-color="white">PHP</v-chip>
+                                          <v-chip color="green" label text-color="white">JavaScript</v-chip>
+                                          <v-chip color="indigo  darken-1" label text-color="white">Laravel</v-chip>
+                                          <v-chip color="red" label text-color="white">MySql</v-chip>
+                                          <v-chip color="primary" label text-color="white">PostgreSQL</v-chip>
+                                          <v-chip color="secondary" label text-color="white">JSON</v-chip>
+                                          <v-chip color="green" label text-color="white">ExtJs</v-chip>
+                                        </div>
+                                    </v-list-tile>
+                                </v-list>
+                            </div>
+                          </v-card-title>
+                        </v-card>
+                      </v-flex>
+                    </v-layout>
+                  </v-flex>
+
+                  <v-flex xs12 class="mt-4">
+                    <span class="headline"><v-icon medium>library_books</v-icon>&nbsp;Educacion </span><br>
+                    <v-divider></v-divider><br>
+                    <v-layout>
+                      <v-flex xs12>
+                        <v-card elevation-10>
+                          <v-toolbar height="50%" color="primary" dark>
+                             <v-icon >account_balance</v-icon>
+                            <v-toolbar-title >Universidad de Oriente</v-toolbar-title>
+                            <v-spacer></v-spacer>
+                            <v-toolbar-items>
+                              <v-btn flat><v-icon left>date_range</v-icon>2000 - 2006</v-btn>
+                            </v-toolbar-items>
+                          </v-toolbar>
+
+                          <v-card-title primary-title>
+                            <div>
+                              <h2>
+                                  <v-icon>school</v-icon>
+                                Ingeniero de Sistemas</h2>
+                                <v-list>
+                                  
+                                    <v-list-tile>
+                                      <v-list-tile-avatar>
+                                        <v-icon>location_on</v-icon>
+                                      </v-list-tile-avatar>
+
+                                    Núcleo Anzoátegui, Venezuela.
+                                    </v-list-tile>
+                                    
+                                </v-list>
+                            </div>
+                          </v-card-title>
+                        </v-card>
+                      </v-flex>
+                    </v-layout>
+                  </v-flex>
+
+            
+
+                  <v-flex xs12>
+                    <v-divider></v-divider><br>
+                    <v-layout>
+                      <v-flex xs12>
+                        <v-card>
+                          <v-toolbar height="50%" color="primary" dark>
+                             <v-icon >important_devices</v-icon>
+                            <v-toolbar-title >Software y Habilidades</v-toolbar-title>
+                            <v-spacer></v-spacer>
+                            <v-toolbar-items>
+                              <v-btn flat><v-icon left></v-icon></v-btn>
+                            </v-toolbar-items>
+                          </v-toolbar>
+                            <div>
+                              <v-flex xs12>
+                                <v-list>
+                                  <v-list-tile>
+                                    <v-flex class="mb-1"><js-icon fillColor="orange darken-4" dark/></v-flex>
+                                  <v-progress-linear class="mt-1 ml-1"
+                                    color="teal lighten-1"
+                                    height="24"
+                                    value="80"
+                                  ></v-progress-linear>
+                                  </v-list-tile>
+
+                                  <v-list-tile>
+                                    <v-flex class="mb-1"><php-icon fillColor="#039BE5" dark/></v-flex>
+                                  <v-progress-linear class="mt-1 ml-1"
+                                    color="yellow lighten-1"
+                                    height="24"
+                                    value="85"
+                                  ></v-progress-linear>
+                                  </v-list-tile>
+
+                                  <v-list-tile>
+                                    <v-flex class="mb-1"><vuejs-icon fillColor="#00796B" dark/></v-flex>
+                                  <v-progress-linear class="mt-1 ml-1"
+                                    color="purple darken-2"
+                                    height="24"
+                                    value="70"
+                                  ></v-progress-linear>
+                                  </v-list-tile>
+
+                                  <v-list-tile>
+                                    <v-flex class="mb-1"><angular-icon fillColor="red" dark/></v-flex>
+                                  <v-progress-linear class="mt-1 ml-1"
+                                    color="indigo lighten-1"
+                                    height="24"
+                                    value="60"
+                                  ></v-progress-linear>
+                                  </v-list-tile>
+
+                                  <v-list-tile>
+                                    <v-flex class="mb-1"><database-icon fillColor="#455A64" dark/></v-flex>
+                                  <v-progress-linear class="mt-1 ml-1"
+                                    color="red lighten-1"
+                                    height="24"
+                                    value="70"
+                                  ></v-progress-linear>
+                                  </v-list-tile>
+
+                                  <v-list-tile>
+                                    <v-flex class="mb-1"><laravel-icon fillColor="#E65100" dark/></v-flex>
+                                  <v-progress-linear class="mt-1 ml-1"
+                                    color="blue lighten-1"
+                                    height="24"
+                                    value="80"
+                                  ></v-progress-linear>
+                                  </v-list-tile>
+
+                                  <v-list-tile>
+                                    <v-flex class="mb-1"><git-icon fillColor="#1B5E20" dark/></v-flex>
+                                  <v-progress-linear class="mt-1 ml-1"
+                                    color="green lighten-1"
+                                    height="24"
+                                    value="85"
+                                  ></v-progress-linear>
+                                  </v-list-tile>
+
+                                  <v-list-tile>
+                                    <v-flex class="mb-1"><json-icon fillColor="#E65100" dark/></v-flex>
+                                  <v-progress-linear class="mt-1 ml-1"
+                                    color="red lighten-1"
+                                    height="24"
+                                    value="90"
+                                  ></v-progress-linear>
+                                  </v-list-tile>
+                                  
+                                </v-list>
+                              </v-flex>
+                            </div>
+                        </v-card>
+                      </v-flex>
+
+                      
+                    </v-layout>
                   </v-flex>
                 </v-layout>
               </v-container>
