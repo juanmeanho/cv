@@ -1,8 +1,8 @@
 <template>
   <v-app>
   <v-layout>
-    <v-flex xs10 offset-xs1>
-      <v-card width="1200px">
+    <v-flex xs12>
+      <v-card >
         <v-img
           src="https://image.shutterstock.com/image-photo/wood-wall-background-texture-natural-260nw-754092013.jpg"
           height="190px"
@@ -237,7 +237,7 @@
                                       <v-list-tile-avatar>
                                         <v-icon>build</v-icon>
                                       </v-list-tile-avatar>
-                                        <div class="text-xs-center">
+
                                           <v-chip color="primary" label text-color="white">PHP</v-chip>
                                           <v-chip color="green" label text-color="white">JavaScript</v-chip>
                                           <v-chip color="indigo  darken-1" label text-color="white">Laravel</v-chip>
@@ -245,7 +245,6 @@
                                           <v-chip color="primary" label text-color="white">PostgreSQL</v-chip>
                                           <v-chip color="secondary" label text-color="white">JSON</v-chip>
                                           <v-chip color="green" label text-color="white">ExtJs</v-chip>
-                                        </div>
                                     </v-list-tile>
                                 </v-list>
                             </div>
@@ -377,11 +376,29 @@
                                   <v-list-tile>
                                     <v-flex class="mb-1"><json-icon fillColor="#E65100" dark/></v-flex>
                                   <v-progress-linear class="mt-1 ml-1"
-                                    color="red lighten-1"
+                                    color="red darken-1"
                                     height="24"
                                     value="90"
                                   ></v-progress-linear>
                                   </v-list-tile>
+
+                                    <v-layout wrap >
+                                      <v-flex >
+                                    <v-chip label outline color="green">ExtJs</v-chip>
+                                    <v-chip label outline color="green">ZendFramework</v-chip>
+                                    <v-chip label outline color="green">Vuetify</v-chip>
+                                    <v-chip label outline color="green">Vuex</v-chip>
+                                    <v-chip label outline color="green">Firebase</v-chip>
+                                    <v-chip label outline color="green">Framework7</v-chip>
+                                    <v-chip label outline color="green">Webpack</v-chip>
+                                    <v-chip label outline color="green">Npm</v-chip>
+                                    <v-chip label outline color="green">HTML5</v-chip>
+                                    <v-chip label outline color="green">jQuery</v-chip>
+                                    <v-chip label outline color="green">APIs</v-chip>
+                                    <v-chip label outline color="green">Bootstrap</v-chip>
+                                  </v-flex>
+                                  </v-layout>
+
                                   
                                 </v-list>
                               </v-flex>
