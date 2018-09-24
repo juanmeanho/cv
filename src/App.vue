@@ -10,12 +10,12 @@
         >
           <v-container >
             <v-layout fill-height>
-              <v-flex xs12 class="text-xs-center" flexbox>
+              <v-flex xs12 class="text-xs-center title" flexbox>
                 <br>
-                <span >Curriculum Vitae</span><br>
-                <span class="headline">Juan Arístides Meaño</span>
+                <div class="font-italic" >Curriculum Vitae</div><br>
+                <div class="headline  font-weight-black font-italic">Juan Arístides Meaño</div>
                 <br>
-                <span >< Desarrollador Web /></span>
+                <code >< Desarrollador Web /></code>
                 
               </v-flex>
             </v-layout>
@@ -24,7 +24,7 @@
 
         <v-layout row wrap>
           <v-flex xs4 >
-            <v-card color="grey lighten-1">
+            <v-card color="gray lighten-1">
               <v-container >
                 <v-layout row wrap >
                   <v-flex>
@@ -41,10 +41,12 @@
               <v-layout row>
                 <v-flex xs12 >
                       <template v-for="(item, index) in items">
+                      
                         <v-subheader 
                           v-if="item.header"
                           :key="item.header"
                         >
+                        
                           {{ item.header }}
                         </v-subheader>
 
@@ -57,6 +59,9 @@
                         <v-list-tile 
                           v-else
                           :key="item.title">
+                          <v-list-tile-avatar>
+                              <v-icon medium>{{ item.icon }}</v-icon>
+                          </v-list-tile-avatar>
                           <v-list-tile-content>
                             <v-list-tile-title v-html="item.title"></v-list-tile-title>
                             <v-list-tile-sub-title v-html="item.subtitle"></v-list-tile-sub-title>
@@ -85,6 +90,9 @@
                         <v-list-tile 
                           v-else
                           :key="item.title">
+                          <v-list-tile-avatar>
+                              <v-icon medium>{{ item.icon }}</v-icon>
+                          </v-list-tile-avatar>
                           <v-list-tile-content>
                             <v-list-tile-title v-html="item.title"></v-list-tile-title>
                             <v-list-tile-sub-title v-html="item.subtitle"></v-list-tile-sub-title>
@@ -97,29 +105,59 @@
               <v-divider></v-divider>
               <v-layout row>
                 <v-flex xs12 >
-                      <template v-for="(item, index) in itemsLink">
-                        <v-subheader 
-                          v-if="item.header"
-                          :key="item.header"
+                <template >
+                  <v-subheader>
+                     LINKS
+                  </v-subheader>
+                  <v-container>
+                    <v-btn class="pt-1" href="https://www.linkedin.com/in/juan-meanho/" block color="#0077B5" dark><linkedin-icon/></v-btn>
+                      <p class="text-xs-center caption font-italic">https://www.linkedin.com/in/juan-meanho/</p>
+                    
+                    <v-btn class="pt-1" href="https://github.com/juanmeanho" block color="grey darken-3" dark><github-icon/></v-btn>
+                      <p class="text-xs-center caption font-italic">https://github.com/juanmeanho</p>
+
+                    <v-btn class="pt-1" href="https://www.facebook.com/juan.meano" block color="#3b5998" dark><facebook-icon/></v-btn>
+                      <p class="text-xs-center caption font-italic">https://www.facebook.com/juan.meano</p>
+
+                    <v-btn class=" text-capitalize" href="https://www.facebook.com/juan.meano" block color="teal" dark>Curriculum Vitae</v-btn>
+                      <p class="text-xs-center caption font-italic">https://www.facebook.com/juan.meano</p>
+                  </v-container>
+                </template>
+                <v-divider></v-divider>
+                <template >
+                  <v-subheader>
+                     Aficiones
+                  </v-subheader>
+                  <v-container>
+                    <v-avatar><soccer-icon/></v-avatar>
+                    <v-avatar><library-icon/></v-avatar>
+                    <v-avatar><airplane-icon/></v-avatar>
+                    <v-avatar><beach-icon/></v-avatar>
+                    <v-avatar><headphones-icon/></v-avatar>
+                    <v-avatar><movie-icon/></v-avatar>
+                  </v-container>
+                </template>
+                <template >
+                    <v-footer class="mt-3" color="primary lighten-1" height="50px">
+                      <v-layout
+                        justify-center
+                        row
+                        wrap
+                      >
+                        <v-flex
+                          primary
+                          lighten-2
+                          py-3
+                          text-xs-center
+                          white--text
+                          xs12
                         >
-                          {{ item.header }}
-                        </v-subheader>
-
-                        <v-divider
-                          v-else-if="item.divider"
-                          :inset="item.inset"
-                          :key="index"
-                        ></v-divider>
-
-                        <v-list-tile 
-                          v-else
-                          :key="item.title">
-                          <v-list-tile-content>
-                            <v-list-tile-title v-html="item.title"></v-list-tile-title>
-                            <v-list-tile-sub-title v-html="item.subtitle"></v-list-tile-sub-title>
-                          </v-list-tile-content>
-                        </v-list-tile>
-                      </template>
+                          Ultima Actualización: <strong> Septiembre de 2018</strong>
+                        </v-flex>
+                      </v-layout>
+                    </v-footer>
+                </template>
+                     
                 </v-flex>
               </v-layout>
 
@@ -237,7 +275,8 @@
                                       <v-list-tile-avatar>
                                         <v-icon>build</v-icon>
                                       </v-list-tile-avatar>
-
+                                      <div>
+                                        <v-layout row wrap>
                                           <v-chip color="primary" label text-color="white">PHP</v-chip>
                                           <v-chip color="green" label text-color="white">JavaScript</v-chip>
                                           <v-chip color="indigo  darken-1" label text-color="white">Laravel</v-chip>
@@ -245,6 +284,8 @@
                                           <v-chip color="primary" label text-color="white">PostgreSQL</v-chip>
                                           <v-chip color="secondary" label text-color="white">JSON</v-chip>
                                           <v-chip color="green" label text-color="white">ExtJs</v-chip>
+                                        </v-layout>
+                                      </div>
                                     </v-list-tile>
                                 </v-list>
                             </div>
@@ -373,29 +414,28 @@
                                   ></v-progress-linear>
                                   </v-list-tile>
 
-                                  <v-list-tile>
-                                    <v-flex class="mb-1"><json-icon fillColor="#E65100" dark/></v-flex>
-                                  <v-progress-linear class="mt-1 ml-1"
-                                    color="red darken-1"
-                                    height="24"
-                                    value="90"
-                                  ></v-progress-linear>
-                                  </v-list-tile>
+                              
 
                                     <v-layout wrap >
                                       <v-flex >
-                                    <v-chip label outline color="green">ExtJs</v-chip>
-                                    <v-chip label outline color="green">ZendFramework</v-chip>
-                                    <v-chip label outline color="green">Vuetify</v-chip>
-                                    <v-chip label outline color="green">Vuex</v-chip>
-                                    <v-chip label outline color="green">Firebase</v-chip>
-                                    <v-chip label outline color="green">Framework7</v-chip>
-                                    <v-chip label outline color="green">Webpack</v-chip>
-                                    <v-chip label outline color="green">Npm</v-chip>
-                                    <v-chip label outline color="green">HTML5</v-chip>
-                                    <v-chip label outline color="green">jQuery</v-chip>
-                                    <v-chip label outline color="green">APIs</v-chip>
-                                    <v-chip label outline color="green">Bootstrap</v-chip>
+                                    <v-chip label outline color="green darken-4">ExtJs</v-chip>
+                                    <v-chip label outline color="green darken-4">Zend</v-chip>
+                                    <v-chip label outline color="green darken-4">Vuetify</v-chip>
+                                    <v-chip label outline color="green darken-4">Vuex</v-chip>
+                                    <v-chip label outline color="green darken-4" >Firebase</v-chip>
+                                    <v-chip label outline color="green darken-4">Framework7</v-chip>
+                                    <v-chip label outline color="green darken-4">Webpack</v-chip>
+                                    <v-chip label outline color="green darken-4">Npm</v-chip>
+                                    <v-chip label outline color="green darken-4">HTML5</v-chip>
+                                    <v-chip label outline color="green darken-4">jQuery</v-chip>
+                                    <v-chip label outline color="green darken-4">APIs</v-chip>
+                                    <v-chip label outline color="green darken-4">Bootstrap</v-chip>
+                                    <v-chip label outline color="green darken-4">JSON</v-chip>
+                                    <v-chip label outline color="green darken-4">CSS</v-chip>
+                                    <v-chip label outline color="green darken-4">PWA</v-chip>
+                                    <v-chip label outline color="green darken-4">SPA</v-chip>
+                                    <v-chip label outline color="green darken-4">Responsive</v-chip>
+                                    <v-chip label outline color="green darken-4">Material Design</v-chip>
                                   </v-flex>
                                   </v-layout>
 
@@ -440,66 +480,78 @@ export default {
           { header: 'INFORMACIÓN PERSONAL' },
           {
             title: 'Juan Aristides Meaño Correa',
-            subtitle: "Nombre"
+            subtitle: "Nombre",
+            icon: 'how_to_reg'
           },
           { divider: true, inset: true },
           {
             title: '4 de Junio de 1980',
-            subtitle: "Fecha de Nacimiento"
+            subtitle: "Fecha de Nacimiento",
+            icon: 'date_range'
           },
           { divider: true, inset: true },
           {
             title: 'V-14828113',
-            subtitle: "Documento de Identidad"
+            subtitle: "Documento de Identidad",
+            icon: 'picture_in_picture'
           },
           { divider: true, inset: true },
           {
-            title: 'Venezolano',
-            subtitle: "Nacionalidad"
+            title: 'Venezolana',
+            subtitle: "Nacionalidad",
+            icon: 'person_pin'
           },
           { divider: true, inset: true },
           {
             title: 'Ingeniero de Sistemas',
-            subtitle: "Título"
+            subtitle: "Título",
+            icon: 'school'
           }
         ],
          itemsContacto: [
           { header: 'CONTÁCTO' },
           {
             title: '+58 426 5826402',
-            subtitle: "Teléfono"
+            subtitle: "Teléfono",
+            icon: 'phone'
           },
           { divider: true, inset: true },
           {
             title: 'juanmeanoc@gmail.com',
-            subtitle: "E-mail"
+            subtitle: "E-mail",
+            icon: 'email'
           },
           { divider: true, inset: true },
           {
             title: 'juan.meano',
-            subtitle: "Skype"
+            subtitle: "Skype",
+            icon: 'ondemand_video'
           },
           { divider: true, inset: true },
           {
             title: 'Monagas, Venezuela',
-            subtitle: "Dirección"
+            subtitle: "Dirección",
+            icon: 'near_me'
           }
         ],
          itemsLink: [
           { header: 'LINKS' },
           {
-            title: '+58 426 5826402',
-            subtitle: "Linkedin"
+            title: 'https://www.linkedin.com/in/juan-meaño/',
+            subtitle: "Linkedin",
+            icon: 'how_to_reg'
           },
           { divider: true, inset: true },
           {
             title: 'juanmeanoc@gmail.com',
-            subtitle: "Github"
+            subtitle: "Github",
+            icon: 'how_to_reg'
           },
           { divider: true, inset: true },
           {
             title: 'juan.meano',
-            subtitle: "Curriculum"
+            subtitle: "Curriculum",
+            icon: 'how_to_reg'
           }
         ]
     }
